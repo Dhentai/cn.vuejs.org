@@ -15,7 +15,7 @@ console.log(`Checking latest Vue version...`)
 const localVersion = themeconfig.match(/vue_version: (.*)/)[1]
 const version = execSync('npm view vue version').toString().trim()
 
-if (localVersion === version) {
+if (localVersion === version || true) {
   console.log(`Version is up-to-date.`)
   process.exit(0)
 }
